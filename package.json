@@ -1,0 +1,13 @@
+{
+  "name": "callback-app-pages",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "esbuild src/main.js --bundle --minify --format=esm --target=es2022 --outfile=assets/callback.js",
+    "dev": "esbuild src/main.js --bundle --format=esm --outfile=assets/callback.js --watch"
+  },
+  "dependencies": {
+    "esbuild": "^0.28.2",
+    "three": "^0.187.0"
+  }
+}
